@@ -7,7 +7,7 @@ http://www.mulesoft.org/schema/mule/mongo http://www.mulesoft.org/schema/mule/mo
 http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
 http://www.mulesoft.org/schema/mule/tls http://www.mulesoft.org/schema/mule/tls/current/mule-tls.xsd">
 	<mongo:config name="MongoDB_Config" doc:name="MongoDB Config" doc:id="627bf28a-1572-45f2-b995-86bd395d9f9a" >
-		<mongo:connection-string-connection connectionString="mongodb+srv://akbarkhan:DveydpH3df7XTYby@videogames.thglcfx.mongodb.net/video-games?retryWrites=true&amp;w=majority" />
+		<mongo:connection-string-connection connectionString="mongodb+srv://akbarkhan:DveydpH3df7XTYby@videogames.thglcfx.mongodb.net/video-games" />
 	</mongo:config>
 	<flow name="get-sys-mongodb-apiFlow" doc:id="905c5013-856e-4154-bad9-8a0baa76ce08" >
 		<logger level="INFO" doc:name="Logger" doc:id="0e70d9af-1c10-4347-9547-39b4c198652d" message='#["Hello MongoDB"]'/>
