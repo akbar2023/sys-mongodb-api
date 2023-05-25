@@ -6,7 +6,7 @@
 http://www.mulesoft.org/schema/mule/mongo http://www.mulesoft.org/schema/mule/mongo/current/mule-mongo.xsd
 http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
 http://www.mulesoft.org/schema/mule/tls http://www.mulesoft.org/schema/mule/tls/current/mule-tls.xsd">
-	<mongo:config name="MongoDB_Config" doc:name="MongoDB Config" doc:id="d8a09aeb-d583-4a6a-b27e-491de4f730ab" >
+	<mongo:config name="MongoDB_Config" doc:name="MongoDB Config" doc:id="d8a09aeb-d583-4a6a-b27e-491de4f730ab" maximumStalenessSeconds="10" writeConcernTimeoutTimeunit="MINUTES">
 		<mongo:connection-string-connection connectionString="mongodb+srv://akbarkhan:DveydpH3df7XTYby@cluster0.gmmcwtv.mongodb.net/video-games" />
 	</mongo:config>
 	<flow name="get-sys-mongodb-apiFlow" doc:id="905c5013-856e-4154-bad9-8a0baa76ce08" >
